@@ -22,36 +22,39 @@ namespace SS01
         {
             return score;
         }
-		public boolean IsPassed() 
+		public bool IsPassed() 
 		{ 
-			return totalStudents >= 5.0; 
+			return score >= 5.0; 
 		}
-		public string GetClassification() {
+        public string GetClassification()
+        {
             if (score >= 8.0)
-			{
+            {
                 return "Excellent";
             }
-			else if (score >= 6.5)
-			{
+            else if (score >= 6.5)
+            {
                 return "Good";
             }
             else if (score >= 5.0)
-			{
+            {
                 return "Average";
 
             }
             else
-                return "Weak" }
+            {
+                return "Weak";
+            }
+        }
 
         // TODO: write static methods here
         public static int GetTotalStudents()
         {
             return totalStudents;
         }
-        public Student FindTopStudent(Student[] students)
+        public static Student FindTopStudent(Student[] students)
         {
-            Student topStudent = null;
-            double highestScore = double.MinValue;
+            Student topStudent = students[0];
             foreach (Student student in students)
             {
                 if (student.score > highestScore)
@@ -89,24 +92,25 @@ namespace SS01
 
             // TODO: call static and instance methods as required
             //câu 2
-            system.out.println("Total Students: " + Student.GetTotalStudents());
+            Console.WriteLine("Total Students: " + Student.GetTotalStudents());
 
             //câu 3
-            system.out.println("Student List:");
-            for Student student in students)
+            Console.WriteLine("Student List:");
+            foreach (Student student in students)
             {
-                system.out.println($"Name: {student.GetName()}, " +
+               Console.WriteLine($"Name: {student.GetName()}, " +
                     $"Score: {student.GetScore()}, " +
-                    $"Classification: {student.GetClassification()}");
+                    $"Classification: {student.GetClassification()}" +
+                    $"Status:{(student.IsPassed() ? "Passed" : "Failed")}");
             }
 
             //câu 4
-            students TopStudent = students[0].FindTopStudent(students);
-            system.out.println("Top Student: " + students[0].FindTopStudent(students).GetName());
+            Student topStudent = Student.FindTopStudent(students);
+            Console.WriteLine("Top Student: " + topStudent.GetName() + "Score: "+ topStudent.GetScore());
 
             //câu 5
             double averageScore = Student.CalculateAverageScore(students);
-            system.out.println("Average Score: " + Student.CalculateAverageScore(students));
+            Console.WriteLine("Average Score: " + averageScore);
         }
     }
 
