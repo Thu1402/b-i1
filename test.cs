@@ -20,7 +20,7 @@ public class Student
 			s1.name = "Thu";
 			
 			s2.id = "33254020041";
-			s2.name = "Nhi";
+			s2.name = "Uyên";
 			
 			s1.DisplayStudentInfo();
 			s2.DisplayStudentInfo();
