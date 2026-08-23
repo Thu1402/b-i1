@@ -57,7 +57,7 @@ namespace SS01
             Student topStudent = students[0];
             foreach (Student student in students)
             {
-                if (student.score > highestScore)
+                if (student.score > GetHighestScore())
                 {
                     highestScore = student.score;
                     topStudent = student;
@@ -65,7 +65,13 @@ namespace SS01
             }
             return topStudent;
         }
-    public static double CalculateAverageScore(Student[] students)
+
+        private static object GetHighestScore()
+        {
+            return highestScore;
+        }
+
+        public static double CalculateAverageScore(Student[] students)
         {
             double totalScore = 0;
             foreach (Student student in students)
@@ -78,7 +84,7 @@ namespace SS01
 
     class Program
     {
-        static void Main55(string[] args)
+        static void Main(string[] args)
         {
             // TODO: create array of Student objects
             //câu 1
