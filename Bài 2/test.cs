@@ -78,7 +78,7 @@ namespace SS01
 
     class Program
     {
-        static void Main1(string[] args)
+        static void Main55(string[] args)
         {
             // TODO: create array of Student objects
             //câu 1

@@ -44,8 +44,9 @@ public class UserAccount
     // TODO 5: IsVIP (Computed Read-Only)
     public bool IsVIP
     {
-        get { 
-        if (_balance >= 10000m)
+        get
+        {
+            if (_balance >= 10000m)
             {
                 return true;
             }
@@ -86,7 +87,7 @@ class Program
         Console.WriteLine($"Username: {user.Username}");
         Console.WriteLine($"Account Created: {user.CreatedDate}");
 
-        // 2. Test Write-Only Property
+        // 2. Test Write-Only Property 
         // Attempting to read Password should fail compilation!
         //Console.WriteLine(user.Password); // UNCOMMENT TO VERIFY COMPILER ERROR
 
