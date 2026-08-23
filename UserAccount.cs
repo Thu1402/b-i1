@@ -61,7 +61,7 @@ public class UserAccount
     public UserAccount()
     {
         // TODO: Initialize CreatedDate here
-        this.CreatedDate = DateTime.Now;
+        _createdDate = DateTime.Now;
     }
 }
 
