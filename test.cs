@@ -78,7 +78,7 @@ namespace SS01
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             // TODO: create array of Student objects
             //câu 1
@@ -113,5 +113,10 @@ namespace SS01
             Console.WriteLine("Average Score: " + averageScore);
         }
     }
+
+}
+namespace SS02
+{
+
 
 }
