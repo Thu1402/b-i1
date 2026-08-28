@@ -68,7 +68,7 @@ public class UserAccount
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main55(string[] args)
     {
         // --- TEST HARNESS ---
 
