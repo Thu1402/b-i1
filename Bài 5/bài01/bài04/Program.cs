@@ -8,7 +8,7 @@ using bài04;
 namespace bài04 {
 		public class Program
 		{
-			static void Main4(string[] args)
+			static void Main(string[] args)
 			{
 			Console.OutputEncoding = Encoding.UTF8;
             List<Sach> listSach = new List<Sach>();

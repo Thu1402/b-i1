@@ -2,7 +2,7 @@
 {
     public class tinhtien
     {
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             ///tạo danh sách giao dịch
