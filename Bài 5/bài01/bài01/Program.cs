@@ -8,7 +8,7 @@
             List<ChuyenXe> list = new List<ChuyenXe>();
 
             // Tạo 2 chuyến xe cho mỗi loại xe chuyenxeNoithanh và chuyenxeNgoaithanh
-            chuyenxeNoithanh nt1 = new chuyenxeNoithanh("CX001", "Nguyen Van A", "29A-12345", 5000000, 100, 5);
+            chuyenxeNoithanh nt1 = new chuyenxeNoithanh("CX005", "Nguyen Van A", "29A-12345", 5000000, 100, 5);
             chuyenxeNoithanh nt2 = new chuyenxeNoithanh("CX003", "Le Thi C", "30A-54321", 6000000, 150, 7);
             chuyenxeNgoaithanh ngt1 = new chuyenxeNgoaithanh("CX002", "Tran Van B", "30B-67890", 8000000, "Da Nang", 3);
             chuyenxeNgoaithanh ngt2 = new chuyenxeNgoaithanh("CX004", "Pham Thi D", "31B-09876", 9000000, "Hue", 4);
