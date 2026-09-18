@@ -109,7 +109,7 @@ namespace Bài_2
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main55(string[] args)
         {
             BankAccount account = new BankAccount("John Doe", 500.00m, "1234");
 

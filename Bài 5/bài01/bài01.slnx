@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../bài02/bài02.csproj" />
+  <Project Path="bài01/bài01.csproj" />
+  <Project Path="bài03/bài03.csproj" Id="c275c8de-1f8e-41c4-a28b-790d85cb4d95" />
+  <Project Path="bài04/bài04.csproj" Id="4776bc98-24e5-48da-9617-cf956acb7552" />
+  <Project Path="bài05/bài05.csproj" Id="403d3b84-a867-4cc5-be4d-93cfdba18de0" />
+  <Project Path="bài06/bài06.csproj" Id="e270a4f2-08de-4014-8994-db3d8a01feca" />
+</Solution>

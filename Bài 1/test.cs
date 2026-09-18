@@ -14,7 +14,7 @@ namespace SS01
         }
 
         // TODO: write instance methods here
-		public string GetName()
+        public string GetName()
         {
             return name;
         }
@@ -22,10 +22,10 @@ namespace SS01
         {
             return score;
         }
-		public bool IsPassed() 
-		{ 
-			return score >= 5.0; 
-		}
+        public bool IsPassed()
+        {
+            return score >= 5.0;
+        }
         public string GetClassification()
         {
             if (score >= 8.0)
@@ -84,7 +84,7 @@ namespace SS01
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             // TODO: create array of Student objects
             //câu 1
@@ -104,15 +104,15 @@ namespace SS01
             Console.WriteLine("Student List:");
             foreach (Student student in students)
             {
-               Console.WriteLine($"Name: {student.GetName()}, " +
-                    $"Score: {student.GetScore()}, " +
-                    $"Classification: {student.GetClassification()}" +
-                    $"Status:{(student.IsPassed() ? "Passed" : "Failed")}");
+                Console.WriteLine($"Name: {student.GetName()}, " +
+                     $"Score: {student.GetScore()}, " +
+                     $"Classification: {student.GetClassification()}" +
+                     $"Status:{(student.IsPassed() ? "Passed" : "Failed")}");
             }
 
             //câu 4
             Student topStudent = Student.FindTopStudent(students);
-            Console.WriteLine("Top Student: " + topStudent.GetName() + "Score: "+ topStudent.GetScore());
+            Console.WriteLine("Top Student: " + topStudent.GetName() + "Score: " + topStudent.GetScore());
 
             //câu 5
             double averageScore = Student.CalculateAverageScore(students);
